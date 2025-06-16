@@ -1,5 +1,5 @@
 from glob import glob
-from os.path import abspath ,basename
+from os.path import abspath
 from ultralytics import YOLO    
 
 cat_files = glob("data/Cat/*.jpg")
@@ -17,6 +17,6 @@ print("First dog image:", dog_files[0])
 
 model = YOLO("yolo11n-cls.pt")
 
-model.train(data=data, epochs=100, device=0, project="dist", name="class", batch=1024)
+model.train(data=data, epochs=100, device=0, project="dist", name="class", batch=128)
 
-model.export(format="tflite", imgsz=224)
+print("Training complete. Model saved in 'dist/class/weights/best.pt'.")
