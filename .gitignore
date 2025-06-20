@@ -1,5 +1,10 @@
 data
 data_split
 dist
+kagglecatsanddogs_5340/
+temp/
+
 
 .venv
+
+*.zip

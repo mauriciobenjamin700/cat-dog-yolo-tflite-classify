@@ -12,11 +12,8 @@ dog_files.sort()
 print("Number of cat images:", len(cat_files))
 print("Number of dog images:", len(dog_files))
 
-print("First cat image:", cat_files[0])
-print("First dog image:", dog_files[0])
-
 model = YOLO("yolo11n-cls.pt")
 
-model.train(data=data, epochs=100, device=0, project="dist", name="class", batch=128)
+model.train(data=data, epochs=100, device=0, project="dist", name="class", batch=128, imgsz=224)
 
 print("Training complete. Model saved in 'dist/class/weights/best.pt'.")

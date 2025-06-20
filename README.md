@@ -6,9 +6,17 @@ Este projeto é um guia simples para construir um modelo de classificação simp
 
 O dataset usado se encontra neste [site](https://www.microsoft.com/en-us/download/details.aspx?id=54765). Onde o mesmo é composto por 12500 imagens de gatos e 12500 imagens de cachorros.
 
+Caso queira baixar usando wget, use `wget https://download.microsoft.com/download/3/e/1/3e1c3f21-ecdb-4869-8368-6deba77b919f/kagglecatsanddogs_5340.zip`
+
+Você pode baixar também usando o script em `get_data.py`
+
 Lembre-se de baixar o dataset, o extrair e colocar na raiz do projeto.
 
-Renomeie o diretório do dataset para `data`, conforme o exemplo  a baixo
+Execute o Script `extract.py` para extrair os dados do arquivo zip e salvar na pasta temporária
+
+Execute o Script `process.py` para exportar os dados da pasta temporária no formato correto para a pasta `data`:
+
+Exemplo  a baixo:
 
 ```bash
 data/

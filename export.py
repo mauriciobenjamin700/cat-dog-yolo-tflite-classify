@@ -1,5 +1,7 @@
 from ultralytics import YOLO
 
-model = YOLO("dist/class5/weights/best.pt")
+ID = 10
 
-model.export(format="onnx", imgsz=224, device="cpu")
+model = YOLO(f"dist/class{ID}/weights/best.pt")
+
+model.export(format="onnx")
