@@ -31,9 +31,14 @@ README.md
 .gitignore
 ```
 
+Execute o Script `train.py` para treinar seu modelo
+
+Execute o Script `export.py` para gerar a versão `onnx` do seu modelo
+
 ## Dependências
 
 Todas as dependências usadas se encontram no arquivo de configuração `requirements.txt`, mas caso queira saber a nível de curiosidade, estaremos usando as seguintes dependências
 
+- Python 3.10 (Não use versões mais novas, pois a exportação ainda não é estável nelas)
 - [pytorch](https://pytorch.org/get-started/locally/)
 - [ultralytics](https://docs.ultralytics.com/pt/)
